@@ -1,6 +1,6 @@
 <template>
     <div>
-        <header class="shadow-lg bg-slate-500 border-slate-600">
+        <header class="shadow-lg bg-slate-900 border-slate-600">
             <nav class="container flex mx-auto p-4 justify-between">
                 <NuxtLink to="/" class="font-bold text-lg">First Nuxt</NuxtLink>
                 <ul class="flex gap-4">
@@ -12,7 +12,7 @@
         </header>
 
         <!-- Output of contents -->
-        <div class="container mx-auto p-4">
+        <div class="container-fluid mx-auto">
             <slot /> 
         </div>
     </div>
@@ -21,5 +21,9 @@
 <style scoped>
 .router-link-exact-active {
     color: #12b488;
+}
+
+li {
+    color: #fff;
 }
 </style>
