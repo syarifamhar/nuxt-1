@@ -4,9 +4,14 @@
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, illum praesentium? Rerum, molestias debitis repellat cupiditate soluta eius similique, natus maiores nihil necessitatibus consectetur possimus, animi placeat sed voluptates eligendi!</p>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, illum praesentium? Rerum, molestias debitis repellat cupiditate soluta eius similique, natus maiores nihil necessitatibus consectetur possimus, animi placeat sed voluptates eligendi!</p>
     </div>
+
+    <div>
+        {{ data }}
+    </div>
 </template>
 
 <script setup>
+const { data } = await useFetch('/api/default')
 
 </script>
 
